@@ -6,7 +6,10 @@ import axios from "axios";
 import "antd/dist/antd.css";
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import createCounterPlugin from "draft-js-counter-plugin";
+import { convertToRaw } from "draft-js";
 import { Row, Upload, message, Button, Icon, Spin } from "antd";
+import draftToHtml from "draftjs-to-html";
 
 let globalRootURL = "http://" + window.location.host;
 
@@ -16,6 +19,21 @@ const AUTH0_API_AUDIENCE = "https://online-litfest.auth0.com/api/v2/";
 const AUTH0_CALLBACK_URL = globalRootURL;
 
 const { Dragger } = Upload;
+
+const content = {
+  entityMap: {},
+  blocks: [
+    {
+      key: "637gr",
+      text: "Initialized from content state.",
+      type: "unstyled",
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    }
+  ]
+};
 
 class App extends React.Component {
   constructor() {
@@ -132,6 +150,8 @@ class LoggedIn extends React.Component {
       return <EventChoose setEvent={this.setEvent} />;
     } else if (this.state.currentEvent == "Memeify") {
       return <Memeify />;
+    } else if (this.state.currentEvent == "Sweetheart") {
+      return <Sweetheart />;
     }
   }
 }
@@ -150,7 +170,13 @@ class EventChoose extends React.Component {
           >
             Memeify
           </Button>
-          <Button size="large" type="primary">
+          <Button
+            size="large"
+            type="primary"
+            onClick={e => {
+              this.props.setEvent(e.target.textContent);
+            }}
+          >
             Sweetheart
           </Button>
           <Button size="large" type="primary">
@@ -263,6 +289,55 @@ class Memeify extends React.Component {
         </Dragger>
       );
     }
+  }
+}
+
+const counterPlugin = createCounterPlugin();
+const { CharCounter, WordCounter, LineCounter, CustomCounter } = counterPlugin;
+const plugins = [counterPlugin];
+
+class Sweetheart extends React.Component {
+  constructor() {
+    super();
+    const contentState = content;
+    this.state = {
+      contentState
+    };
+    this.onContentStateChange = this.onContentStateChange.bind(this);
+    this.submitHTML = this.submitHTML.bind(this);
+  }
+  onContentStateChange(contentState) {
+    this.setState({
+      contentState
+    });
+  }
+  submitHTML() {
+    console.log(draftToHtml(this.state.contentState));
+    const headers = {
+      headers: {
+        "Content-Type": "application/json",
+        authorization: "Bearer " + localStorage.getItem("access_token")
+      }
+    };
+    let url =
+      "http://localhost:8080/api/private/sweetheart/upload?id_token=" +
+      localStorage.getItem("id_token");
+    axios.post(url, draftToHtml(this.state.contentState), headers);
+  }
+  render() {
+    const { contentState } = this.state;
+    return (
+      <div>
+        <Editor
+          wrapperClassName="demo-wrapper"
+          editorClassName="demo-editor"
+          onContentStateChange={this.onContentStateChange}
+        />
+        <Button color="primary" onClick={this.submitHTML}>
+          Submit
+        </Button>
+      </div>
+    );
   }
 }
 

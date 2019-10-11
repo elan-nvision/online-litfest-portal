@@ -161,6 +161,49 @@ func main() {
 				}
 			}
 		}))))
+	router.Handle("/api/private/sweetheart/upload", negroni.New(
+		negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
+		negroni.Wrap(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			tokenString := r.URL.Query()["id_token"][0]
+			claims := jwt.MapClaims{}
+			jwt.ParseWithClaims(tokenString, claims, func(token *jwt.Token) (interface{}, error) {
+				x, err := getPemCert(token)
+				return []byte(x), err
+			})
+			email := claims["email"].(string)
+			tempFile, err := ioutil.TempFile("temp-sweetheart", email+".*.html")
+			if err != nil {
+				fmt.Println(err)
+			}
+			defer tempFile.Close()
+			fileBytes, err := ioutil.ReadAll(r.Body)
+			if err != nil {
+				fmt.Println(err)
+			}
+			// write this byte array to our temporary file
+			tempFile.Write(fileBytes)
+			// return that we have successfully uploaded our file!
+			fmt.Fprintf(w, "Successfully Uploaded File\n")
+			// rows, err := db.Query(`SELECT EXISTS(SELECT * FROM memeify_entries WHERE email = $1)`, email)
+			// if err != nil {
+			// 	fmt.Println("Error in reading DB object", err)
+			// }
+			// var doesEntryExist bool
+			// rows.Next()
+			// err = rows.Scan(&doesEntryExist)
+			// if err != nil {
+			// 	fmt.Println("Error in parsing", err)
+			// }
+			// if doesEntryExist {
+			// 	rows, err = db.Query(`UPDATE memeify_entries SET entries = entries + 1 WHERE email = $1`, email)
+			// } else {
+			// 	sqlStatement := `INSERT INTO memeify_entries (email, entries) VALUES ($1, $2)`
+			// 	_, err = db.Exec(sqlStatement, email, 1)
+			// 	if err != nil {
+			// 		panic(err)
+			// 	}
+			// }
+		}))))
 	router.Handle("/api/private/memeify/entries", negroni.New(
 		negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
 		negroni.Wrap(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
