@@ -17,6 +17,7 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
+	"gopkg.in/gomail.v2"
 )
 
 var seededRand *rand.Rand = rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -160,6 +161,16 @@ func main() {
 					panic(err)
 				}
 			}
+			m := gomail.NewMessage()
+			m.SetHeader("From", "web@elan.org.in")
+			m.SetHeader("To", "ee18btech11018@iith.ac.in")
+			m.SetHeader("Subject", "New submission for Memeify")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.Attach(tempFile.Name())
+			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
+			if err := d.DialAndSend(m); err != nil {
+				panic(err)
+			}
 		}))))
 	router.Handle("/api/private/sweetheart/upload", negroni.New(
 		negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
@@ -184,6 +195,18 @@ func main() {
 			tempFile.Write(fileBytes)
 			// return that we have successfully uploaded our file!
 			fmt.Fprintf(w, "Successfully Uploaded File\n")
+			m := gomail.NewMessage()
+			m.SetHeader("From", "web@elan.org.in")
+			m.SetHeader("To", "ep18btech11018@iith.ac.in")
+			m.SetHeader("Subject", "New submission for Event")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+
+			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
+
+			// Send the email to Bob, Cora and Dan.
+			if err := d.DialAndSend(m); err != nil {
+				panic(err)
+			}
 			// rows, err := db.Query(`SELECT EXISTS(SELECT * FROM memeify_entries WHERE email = $1)`, email)
 			// if err != nil {
 			// 	fmt.Println("Error in reading DB object", err)
