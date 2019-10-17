@@ -2,6 +2,7 @@
   "name": "online-litfest-portal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elan.org.in/litfest/portal",
   "dependencies": {
     "antd": "^3.23.5",
     "auth0-js": "^9.11.3",
