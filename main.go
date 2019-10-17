@@ -58,8 +58,8 @@ type JSONWebKeys struct {
 const (
 	host     = "localhost"
 	port     = 5432
-	user     = "vish"
-	password = "dontaskagain"
+	user     = "postgres"
+	password = "your-password"
 	dbname   = "online_litfest"
 )
 
