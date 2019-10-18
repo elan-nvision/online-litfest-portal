@@ -267,23 +267,29 @@ class App extends React.Component {
                         ></div>
                         <br />
 
+                        <div className="text-center">
+                          <ModalExample
+                            buttonLabel={
+                              localStorage.getItem("id_token")
+                                ? "Participate"
+                                : "Register"
+                            }
+                            register={this.authenticate}
+                            eventName={event[this.state.event].name}
+                            eventID={event[this.state.event].id}
+                            wordLimit={event[this.state.event].wordLimit}
+                            entryLimit={event[this.state.event].entryLimit}
+                          />
+                        </div>
                         <ul className="text-center">
                           <li>
-                            <ModalExample
-                              buttonLabel={
-                                localStorage.getItem("id_token")
-                                  ? "Participate"
-                                  : "Register"
-                              }
-                              register={this.authenticate}
-                              eventName={event[this.state.event].name}
-                              eventID={event[this.state.event].id}
-                              wordLimit={event[this.state.event].wordLimit}
-                              entryLimit={event[this.state.event].entryLimit}
-                            />
+                            <a href="#rules">Rules</a>
                           </li>
                           <li>
-                            <a href="litfest-rules.html">Event Rules</a>
+                            <a href="litfest-rules.html">Sample Entry</a>
+                          </li>
+                          <li>
+                            <a href="#prizes">Prizes</a>
                           </li>
                         </ul>
                       </div>
@@ -298,38 +304,43 @@ class App extends React.Component {
                 </div>
               </div>
             </div>
-            <div id="fh5co-couple-story">
-              <div className="container rules">
-                <div className="row">
-                  <div className="col-md-12 justify-content-md-center text-center fh5co-heading animate-box">
-                    <h1>The Prizes</h1>
+            <div id="prizes">
+              <div id="fh5co-couple-story">
+                <div className="container rules">
+                  <div className="row">
+                    <div className="col-md-12 justify-content-md-center text-center fh5co-heading animate-box">
+                      <h1>The Prizes</h1>
+                    </div>
                   </div>
-                </div>
 
-                <div className="row no-gutters text-center animate-box prizes">
-                  <div className="col-md-6">
-                    <h2>1st Prize</h2>
-                    <h1>Rs {event[this.state.event].prize[0]}</h1>
-                  </div>
-                  <div className="col-md-6 second-prize">
-                    <h2>2nd Prize</h2>
-                    <h1>Rs {event[this.state.event].prize[1]}</h1>
+                  <div className="row no-gutters text-center animate-box prizes">
+                    <div className="col-md-6">
+                      <h2>1st Prize</h2>
+                      <h1>Rs {event[this.state.event].prize[0]}</h1>
+                    </div>
+                    <div className="col-md-6 second-prize">
+                      <h2>2nd Prize</h2>
+                      <h1>Rs {event[this.state.event].prize[1]}</h1>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="fh5co-couple-story" className="rules">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-12 justify-content-md-center text-center fh5co-heading animate-box">
-                    <h1>The Rules</h1>
+
+            <div id="rules">
+              <div id="fh5co-couple-story" className="rules">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-12 justify-content-md-center text-center fh5co-heading animate-box">
+                      <h1>The Rules</h1>
+                    </div>
                   </div>
-                </div>
-                <div className="row animate-box">
-                  <div className="col-12">
-                    <ol className="" style={{ marginTop: "2vw" }}>
-                      {rulesObject}
-                    </ol>
+                  <div className="row animate-box">
+                    <div className="col-12">
+                      <ol className="" style={{ marginTop: "2vw" }}>
+                        {rulesObject}
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </div>
