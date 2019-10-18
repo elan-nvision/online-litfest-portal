@@ -212,7 +212,7 @@ class App extends React.Component {
               <div className="row">
                 <div className="col-md-3">
                   <div id="fh5co-logo">
-                    <a href="../litfest.html">
+                    <a href="https://elan.org.in/litfest.html">
                       <img src={Logo} />
                     </a>
                   </div>
@@ -481,7 +481,7 @@ class Memeify extends React.Component {
     if (this.state.uploads == null) {
       return <Spin size="large" indicator={loading}></Spin>;
     } else if (this.state.uploads > 3) {
-      return <p>you've already submitted 3 entries</p>;
+      return <p>You've already submitted 3 entries. </p>;
     } else if (this.state.uploads <= 3) {
       return (
         <Dragger {...props}>
