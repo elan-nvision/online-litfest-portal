@@ -20,6 +20,7 @@ import {
 } from "antd";
 import { ModalHeader, ModalBody, Modal } from "reactstrap";
 import draftToHtml from "draftjs-to-html";
+import { fadeIn } from "react-animations";
 
 import Logo from "./assets/zozimus.png";
 import event from "./events";
@@ -197,11 +198,14 @@ class App extends React.Component {
     ) {
       let rulesObject = [];
       event[this.state.event].rules.forEach(item => {
-        rulesObject.push(<li>{item}</li>);
+        rulesObject.push(<li dangerouslySetInnerHTML={{ __html: item }}></li>);
       });
       return (
         <div
-          style={{ backgroundColor: event[this.state.event].backgroundColor }}
+          style={{
+            backgroundColor: event[this.state.event].backgroundColor,
+            fontSize: "1.3rem"
+          }}
         >
           <nav className="fh5co-nav" role="navigation" id="navbar">
             <div className="container-fluid">
@@ -233,7 +237,7 @@ class App extends React.Component {
             </div>
           </nav>
           <div id="page">
-            <div id="fh5co-first">
+            <div id="fh5co-first animated fadeIn">
               <div className="container-fluid">
                 <div className="row no-gutters">
                   <div className="col-lg-5 col-xl-6">
@@ -466,11 +470,11 @@ class Memeify extends React.Component {
             <Icon type="upload" />
           </p>
           <p className="ant-upload-text">
-            Upload your meme as a jpg or png here.
+            Upload your meme as a jpg or png or pdf here.
           </p>
           <p className="ant-upload-hint">
-            File size should be less than 2 MB. You can only upload a total of 3
-            memes. Once uploaded, memes cannot be deleted.
+            File size should be less than 2 MB. <br /> You can only upload a
+            total of 3 memes. <br /> Once uploaded, memes CANNOT be deleted.
           </p>
         </Dragger>
       );
