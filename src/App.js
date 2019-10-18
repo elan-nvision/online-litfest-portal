@@ -433,9 +433,15 @@ class Memeify extends React.Component {
       globalRootURL +
       "/api/private/memeify/entries?id_token=" +
       localStorage.getItem("id_token");
-    axios.get(url, headers).then(res => {
-      this.setState({ uploads: res.data.entries });
-    });
+    axios
+      .get(url, headers)
+      .then(res => {
+        this.setState({ uploads: res.data.entries });
+      })
+      .catch(error => {
+        localStorage.clear();
+        window.location.reload();
+      });
   }
   render() {
     const props = {
@@ -564,9 +570,15 @@ class EditorThing extends React.Component {
       this.props.eventName +
       "/entries?id_token=" +
       localStorage.getItem("id_token");
-    axios.get(url, headers).then(res => {
-      this.setState({ uploads: res.data.entries });
-    });
+    axios
+      .get(url, headers)
+      .then(res => {
+        this.setState({ uploads: res.data.entries });
+      })
+      .catch(error => {
+        localStorage.clear();
+        window.location.reload();
+      });
   }
   beforeUpload(file) {
     const isJpgOrPng = file.type === "application/pdf";
