@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portal/static/css/main.da6556c6.chunk.css",
+    "main.js": "/portal/static/js/main.328ba5bb.chunk.js",
+    "main.js.map": "/portal/static/js/main.328ba5bb.chunk.js.map",
+    "runtime-main.js": "/portal/static/js/runtime-main.a58c82b1.js",
+    "runtime-main.js.map": "/portal/static/js/runtime-main.a58c82b1.js.map",
+    "static/css/2.5b2e0181.chunk.css": "/portal/static/css/2.5b2e0181.chunk.css",
+    "static/js/2.c1d7b16c.chunk.js": "/portal/static/js/2.c1d7b16c.chunk.js",
+    "static/js/2.c1d7b16c.chunk.js.map": "/portal/static/js/2.c1d7b16c.chunk.js.map",
+    "index.html": "/portal/index.html",
+    "precache-manifest.f673485c0ccabb414adc94813a3f9ef9.js": "/portal/precache-manifest.f673485c0ccabb414adc94813a3f9ef9.js",
+    "service-worker.js": "/portal/service-worker.js",
+    "static/css/2.5b2e0181.chunk.css.map": "/portal/static/css/2.5b2e0181.chunk.css.map",
+    "static/css/main.da6556c6.chunk.css.map": "/portal/static/css/main.da6556c6.chunk.css.map",
+    "static/media/zozimus.png": "/portal/static/media/zozimus.588ac60c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a58c82b1.js",
+    "static/css/2.5b2e0181.chunk.css",
+    "static/js/2.c1d7b16c.chunk.js",
+    "static/css/main.da6556c6.chunk.css",
+    "static/js/main.328ba5bb.chunk.js"
+  ]
+}
