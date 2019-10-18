@@ -200,6 +200,14 @@ class App extends React.Component {
       event[this.state.event].rules.forEach(item => {
         rulesObject.push(<li dangerouslySetInnerHTML={{ __html: item }}></li>);
       });
+      let SampleEntry = [];
+      if (event[this.state.event].sampleEntryLink != "") {
+        SampleEntry.push(
+          <li>
+            <a href={event[this.state.event].sampleEntryLink}>Sample-Entry</a>
+          </li>
+        );
+      }
       return (
         <div
           style={{
@@ -284,12 +292,10 @@ class App extends React.Component {
                           <li>
                             <a href="#rules">Rules</a>
                           </li>
-                          {/* <li>
-                            <a href="litfest-rules.html">Sample-Entry</a>
-                          </li> */}
                           <li>
                             <a href="#prizes">Prizes</a>
                           </li>
+                          {SampleEntry}
                         </ul>
                       </div>
                     </div>

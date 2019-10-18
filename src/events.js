@@ -27,7 +27,9 @@ event["sweetheart"] = {
   ],
   wordLimit: 800,
   entryLimit: 3,
-  prize: [1000, 500]
+  prize: [1000, 500],
+  sampleEntryLink:
+    "https://docs.google.com/document/d/e/2PACX-1vRE3cPPNwH_LwDCDv76p1YUtQ43a2gCLKsuVRooh_IAyROxjzgPkHI_rISG0uvmwqD5KKXqKkZQEOE9/pub"
 };
 event["memeify"] = {
   id: "memeify",
@@ -44,7 +46,8 @@ event["memeify"] = {
   ],
   wordLimit: null,
   entryLimit: null,
-  prize: [500, 250]
+  prize: [500, 250],
+  sampleEntryLink: "http://knowyourmeme.com"
 };
 event["essay"] = {
   id: "essay",
@@ -65,7 +68,8 @@ event["essay"] = {
   ],
   wordLimit: 1500,
   entryLimit: 4,
-  prize: [1500, 750]
+  prize: [1500, 750],
+  sampleEntryLink: ""
 };
 event["goosebumps"] = {
   id: "goosebumps",
@@ -88,7 +92,9 @@ event["goosebumps"] = {
   ],
   wordLimit: 800,
   entryLimit: 3,
-  prize: [500, 250]
+  prize: [500, 250],
+  sampleEntryLink:
+    "https://docs.google.com/document/d/e/2PACX-1vS9xkVbsikrGijBUyv-D3bg-4EkZJGOsYsSMkFEjC9gQPxyz6q7BDARyse4-CrL7xXP_Izv17yTCsxC/pub"
 };
 event["dearme"] = {
   id: "dearme",
@@ -110,7 +116,9 @@ event["dearme"] = {
   ],
   wordLimit: 1000,
   entryLimit: 3,
-  prize: [1000, 500]
+  prize: [1000, 500],
+  sampleEntryLink:
+    "https://docs.google.com/document/d/e/2PACX-1vRODTkqzqP_P8Qz0NKv8PR02Y6smWOf-Eua8MB15kEKbx6hdTUOEO9Z4MrEF5AW0SL1CyrlZXQfHo2w/pub"
 };
 event["ragtag"] = {
   id: "ragtag",
@@ -133,7 +141,9 @@ event["ragtag"] = {
   ],
   wordLimit: 100,
   entryLimit: 5,
-  prize: [750, 250]
+  prize: [750, 250],
+  sampleEntryLink:
+    "https://docs.google.com/document/d/e/2PACX-1vTe5YeMkxi5_7NZH6z_H-PMq0VD-ITHDUtvl_wbUQEoWD2F1OZmEaKcBC6Kasm8aHcaLq7rq9KtuiAH/pub"
 };
 event["review"] = {
   id: "review",
@@ -158,7 +168,8 @@ event["review"] = {
   ],
   wordLimit: 800,
   entryLimit: 3,
-  prize: [1000, 500]
+  prize: [1000, 500],
+  sampleEntryLink: ""
 };
 event["plot"] = {
   id: "plot",
@@ -188,7 +199,9 @@ event["plot"] = {
   ],
   wordLimit: 1500,
   entryLimit: 3,
-  prize: [1000, 500]
+  prize: [1000, 500],
+  sampleEntryLink:
+    "https://docs.google.com/document/d/e/2PACX-1vRWhImcd0YfKZADmq6j3-ItjKU7x3joqPSZadaFEov_hB-7fJ8YNlEBxXsfLM9TbuH6PfQ-QCgBAGf5/pub"
 };
 event["poetry"] = {
   id: "poetry",
@@ -210,7 +223,8 @@ event["poetry"] = {
   ],
   wordLimit: 400,
   entryLimit: 3,
-  prize: [1000, 500]
+  prize: [1000, 500],
+  sampleEntryLink: ""
 };
 
 export default event;
