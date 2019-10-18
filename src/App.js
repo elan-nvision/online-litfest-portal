@@ -351,7 +351,9 @@ class App extends React.Component {
               <div className="row copyright">
                 <div className="col-md-12 text-center">
                   <p>
-                    <small className="block">Zozimus 2019</small>
+                    <small className="block">
+                      Copyright 2019: MadhuAndi Corporation Pvt Ltd.
+                    </small>
                   </p>
                   <ul className="fh5co-social-icons">
                     <li>
