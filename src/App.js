@@ -179,6 +179,7 @@ class App extends React.Component {
   componentDidMount() {
     AUTH0_CALLBACK_URL =
       globalRootURL + "/" + window.location.pathname.split("/")[2];
+    console.log(AUTH0_CALLBACK_URL);
     console.log(window.location.pathname.split("/")[2]);
   }
 
