@@ -266,19 +266,22 @@ class App extends React.Component {
                           }}
                         ></div>
                         <br />
-                        <ModalExample
-                          buttonLabel={
-                            localStorage.getItem("id_token")
-                              ? "Participate"
-                              : "Register"
-                          }
-                          register={this.authenticate}
-                          eventName={event[this.state.event].name}
-                          eventID={event[this.state.event].id}
-                          wordLimit={event[this.state.event].wordLimit}
-                          entryLimit={event[this.state.event].entryLimit}
-                        />
+
                         <ul className="text-center">
+                          <li>
+                            <ModalExample
+                              buttonLabel={
+                                localStorage.getItem("id_token")
+                                  ? "Participate"
+                                  : "Register"
+                              }
+                              register={this.authenticate}
+                              eventName={event[this.state.event].name}
+                              eventID={event[this.state.event].id}
+                              wordLimit={event[this.state.event].wordLimit}
+                              entryLimit={event[this.state.event].entryLimit}
+                            />
+                          </li>
                           <li>
                             <a href="litfest-rules.html">Event Rules</a>
                           </li>
