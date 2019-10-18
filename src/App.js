@@ -220,16 +220,15 @@ class App extends React.Component {
                 <div className="col-md-9 text-right menu-1">
                   <ul style={{ marginRight: "3rem" }}>
                     <li className="active">
-                      <a href="../litfest.html">Home</a>
+                      <a href="https://elan.org.in/litfest.html">Home</a>
                     </li>
                     <li>
-                      <a href="../litfest-rules.html">Rules</a>
+                      <a href="https://elan.org.in/litfest-rules.html">Rules</a>
                     </li>
                     <li>
-                      <a href="../litfest-contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                      <a href="../litfest-register.html">Register</a>
+                      <a href="https://elan.org.in/litfest-contact.html">
+                        Contact Us
+                      </a>
                     </li>
                   </ul>
                 </div>
