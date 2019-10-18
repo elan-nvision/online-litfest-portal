@@ -208,6 +208,21 @@ class App extends React.Component {
           </li>
         );
       }
+      let modal = [];
+      if (event[this.state.event].isLive == "true") {
+        modal.push(
+          <ModalExample
+            buttonLabel={
+              localStorage.getItem("id_token") ? "Participate" : "Register"
+            }
+            register={this.authenticate}
+            eventName={event[this.state.event].name}
+            eventID={event[this.state.event].id}
+            wordLimit={event[this.state.event].wordLimit}
+            entryLimit={event[this.state.event].entryLimit}
+          />
+        );
+      }
       return (
         <div
           style={{
@@ -274,20 +289,7 @@ class App extends React.Component {
                         ></div>
                         <br />
 
-                        <div className="text-center">
-                          <ModalExample
-                            buttonLabel={
-                              localStorage.getItem("id_token")
-                                ? "Participate"
-                                : "Register"
-                            }
-                            register={this.authenticate}
-                            eventName={event[this.state.event].name}
-                            eventID={event[this.state.event].id}
-                            wordLimit={event[this.state.event].wordLimit}
-                            entryLimit={event[this.state.event].entryLimit}
-                          />
-                        </div>
+                        <div className="text-center">{modal}</div>
                         <ul className="text-center">
                           <li>
                             <a href="#rules">Rules</a>

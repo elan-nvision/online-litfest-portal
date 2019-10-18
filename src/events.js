@@ -29,7 +29,8 @@ event["sweetheart"] = {
   entryLimit: 3,
   prize: [1000, 500],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vRE3cPPNwH_LwDCDv76p1YUtQ43a2gCLKsuVRooh_IAyROxjzgPkHI_rISG0uvmwqD5KKXqKkZQEOE9/pub"
+    "https://docs.google.com/document/d/e/2PACX-1vRE3cPPNwH_LwDCDv76p1YUtQ43a2gCLKsuVRooh_IAyROxjzgPkHI_rISG0uvmwqD5KKXqKkZQEOE9/pub",
+  isLive: "true"
 };
 event["memeify"] = {
   id: "memeify",
@@ -47,7 +48,8 @@ event["memeify"] = {
   wordLimit: null,
   entryLimit: null,
   prize: [500, 250],
-  sampleEntryLink: "http://knowyourmeme.com"
+  sampleEntryLink: "http://knowyourmeme.com",
+  isLive: "true"
 };
 event["essay"] = {
   id: "essay",
@@ -69,7 +71,8 @@ event["essay"] = {
   wordLimit: 1500,
   entryLimit: 4,
   prize: [1500, 750],
-  sampleEntryLink: ""
+  sampleEntryLink: "",
+  isLive: "true"
 };
 event["goosebumps"] = {
   id: "goosebumps",
@@ -94,7 +97,8 @@ event["goosebumps"] = {
   entryLimit: 3,
   prize: [500, 250],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vS9xkVbsikrGijBUyv-D3bg-4EkZJGOsYsSMkFEjC9gQPxyz6q7BDARyse4-CrL7xXP_Izv17yTCsxC/pub"
+    "https://docs.google.com/document/d/e/2PACX-1vS9xkVbsikrGijBUyv-D3bg-4EkZJGOsYsSMkFEjC9gQPxyz6q7BDARyse4-CrL7xXP_Izv17yTCsxC/pub",
+  isLive: "false"
 };
 event["dearme"] = {
   id: "dearme",
@@ -118,7 +122,8 @@ event["dearme"] = {
   entryLimit: 3,
   prize: [1000, 500],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vRODTkqzqP_P8Qz0NKv8PR02Y6smWOf-Eua8MB15kEKbx6hdTUOEO9Z4MrEF5AW0SL1CyrlZXQfHo2w/pub"
+    "https://docs.google.com/document/d/e/2PACX-1vRODTkqzqP_P8Qz0NKv8PR02Y6smWOf-Eua8MB15kEKbx6hdTUOEO9Z4MrEF5AW0SL1CyrlZXQfHo2w/pub",
+  isLive: "true"
 };
 event["ragtag"] = {
   id: "ragtag",
@@ -143,7 +148,8 @@ event["ragtag"] = {
   entryLimit: 5,
   prize: [750, 250],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vTe5YeMkxi5_7NZH6z_H-PMq0VD-ITHDUtvl_wbUQEoWD2F1OZmEaKcBC6Kasm8aHcaLq7rq9KtuiAH/pub"
+    "https://docs.google.com/document/d/e/2PACX-1vTe5YeMkxi5_7NZH6z_H-PMq0VD-ITHDUtvl_wbUQEoWD2F1OZmEaKcBC6Kasm8aHcaLq7rq9KtuiAH/pub",
+  isLive: "false"
 };
 event["review"] = {
   id: "review",
@@ -201,7 +207,8 @@ event["plot"] = {
   entryLimit: 3,
   prize: [1000, 500],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vRWhImcd0YfKZADmq6j3-ItjKU7x3joqPSZadaFEov_hB-7fJ8YNlEBxXsfLM9TbuH6PfQ-QCgBAGf5/pub"
+    "https://docs.google.com/document/d/e/2PACX-1vRWhImcd0YfKZADmq6j3-ItjKU7x3joqPSZadaFEov_hB-7fJ8YNlEBxXsfLM9TbuH6PfQ-QCgBAGf5/pub",
+  isLive: "true"
 };
 event["poetry"] = {
   id: "poetry",
@@ -224,7 +231,8 @@ event["poetry"] = {
   wordLimit: 400,
   entryLimit: 3,
   prize: [1000, 500],
-  sampleEntryLink: ""
+  sampleEntryLink: "",
+  isLive: "false"
 };
 
 export default event;
