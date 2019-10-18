@@ -104,7 +104,7 @@ class App extends React.Component {
   state = {
     visible: false,
     loggedIn: null,
-    event: window.location.pathname.split("/")[1]
+    event: window.location.pathname.split("/")[2]
   };
   constructor() {
     super();
@@ -178,8 +178,8 @@ class App extends React.Component {
   }
   componentDidMount() {
     AUTH0_CALLBACK_URL =
-      globalRootURL + "/" + window.location.pathname.split("/")[1];
-    console.log(window.location.pathname.split("/")[1]);
+      globalRootURL + "/" + window.location.pathname.split("/")[2];
+    console.log(window.location.pathname.split("/")[2]);
   }
 
   render() {
