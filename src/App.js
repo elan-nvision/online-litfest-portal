@@ -352,7 +352,7 @@ class App extends React.Component {
                 <div className="col-md-12 text-center">
                   <p>
                     <small className="block">
-                      Copyright 2019: MadhuAndi Corporation Pvt Ltd.
+                      Website developed and maintained by Lambda, IIT Hyderabad
                     </small>
                   </p>
                   <ul className="fh5co-social-icons">
