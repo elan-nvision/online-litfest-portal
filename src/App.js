@@ -284,9 +284,9 @@ class App extends React.Component {
                           <li>
                             <a href="#rules">Rules</a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="litfest-rules.html">Sample-Entry</a>
-                          </li>
+                          </li> */}
                           <li>
                             <a href="#prizes">Prizes</a>
                           </li>
