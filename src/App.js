@@ -28,7 +28,7 @@ const { confirm } = Confirm;
 
 const { Paragraph } = Typography;
 
-let globalRootURL = "http://" + window.location.host;
+let globalRootURL = "https://" + window.location.host;
 
 const AUTH0_CLIENT_ID = "JCvzA0JNJ5KCNONawklcvWx2MT1s53eK";
 const AUTH0_DOMAIN = "online-litfest.auth0.com";
@@ -426,7 +426,6 @@ class Memeify extends React.Component {
       }
     };
     let url =
-      "http://" +
       globalRootURL +
       "/api/private/memeify/entries?id_token=" +
       localStorage.getItem("id_token");
@@ -438,7 +437,6 @@ class Memeify extends React.Component {
     const props = {
       name: "file",
       action:
-        "http://" +
         globalRootURL +
         "/api/private/memeify/upload?id_token=" +
         localStorage.getItem("id_token"),
@@ -520,7 +518,6 @@ class EditorThing extends React.Component {
         }
       };
       let url =
-        "http://" +
         globalRootURL +
         "/api/private/" +
         this.props.eventName +
@@ -558,7 +555,6 @@ class EditorThing extends React.Component {
       }
     };
     let url =
-      "http://" +
       globalRootURL +
       "/api/private/" +
       this.props.eventName +
@@ -590,7 +586,6 @@ class EditorThing extends React.Component {
     const props = {
       name: "file",
       action:
-        "http://" +
         globalRootURL +
         "/api/private/" +
         this.props.eventName +
