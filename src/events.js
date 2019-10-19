@@ -41,7 +41,7 @@ event["memeify"] = {
   imageLink:
     "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/memeify.jpg",
   description:
-    "Do you have what it takes to be the Meme-Lord of the Online Litfest Of Zozimus? If yes, come join the Meme event of our annual online Litfest. (If yes, come sharpen your mike wazowski's and get ready to speak the language of the gods. And then, the senate shall decide your fate.)",
+    "Do you have what it takes to be the Meme-Lord of the Online Litfest Of Zozimus? If yes, come sharpen your mike wazowski's and get ready to speak the language of the gods. And then, the senate shall decide your fate.",
   rules: [
     "The rules can be found <a href='https://docs.google.com/document/u/1/d/e/2PACX-1vTRfmHcxnErgjySqs9mJ3TYsNinHKV7J0Ers3TuIxAmmY1tIkhBlsA0GiUJfwEyQ2lS7lJ-62nbbiYg/pub'>here</a>. "
   ],
@@ -60,7 +60,7 @@ event["essay"] = {
   imageLink:
     "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/essayfinal.jpg",
   description:
-    "Do you have any opinions on the most pressing matters of our age? Do you want to share your views and make sure your voice is heard? Look no further, for the essay competition of the Zozimus Online Litfest is just for you. There are two major topics this time: <ol><li>Youth and climate change: In what direction is our planet's health headed? What kind of a world do we want to live in tomorrow? As the youth of today, we have to speak up against the relentless destruction of our delicate environment. </li> <li>The past decade - golden age or garbage age? The last ten years has brought a lot to the world and has transformed our lives in more ways than one. Smartphones, social media as a way for world leaders to communicate and reach out to the public, the question is - is it all for the better or worse?</li></ol> ",
+    "Do you have any opinions on the most pressing matters of our age? Do you want to share your views and make sure your voice is heard? Look no further, for the essay competition of the Zozimus Online Litfest is just for you. There are two major topics this time: <ol><li>Youth and climate change: In what direction is our planet's health headed? What kind of a world do we want to live in tomorrow? As the youth of today, we have to speak up against the relentless destruction of our delicate environment. </li> <li>The past decade - golden age or garbage age? The last ten years has brought a lot to the world and has transformed our lives in more ways than one. Smartphones, social media as a way for world leaders to communicate and reach out to the public; the question is - is it all for the better or worse?</li></ol> ",
   rules: [
     "Word Limit: 1500 words. ",
     "Maximum number of entries: 4. ",
@@ -83,7 +83,7 @@ event["goosebumps"] = {
   imageLink:
     "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/2linehorror.jpg",
   description: `You’ve probably already figured out what this is from the name. This Halloween time, give us your uncanniest stories in the most compact format. <br />
-  Make sure you send chills up our spine to top our list of horror enthusiasts, because we, for one, don't scare easy.`,
+  Make sure you send chills down our spines to top our list of horror enthusiasts, because we, for one, don't scare easy.`,
   rules: [
     "The entry should focus solely on the story. No stray messages, links to random sites or shenanigans of the sort. Get to the point.",
     "All entries must be two sentences or less.The shorter, the scarier.",
@@ -91,7 +91,7 @@ event["goosebumps"] = {
     "Do not copy worthy compositions.Instead, create copy-worthy material.",
     "Do not make political or religious remarks. Our country has had enough cases already",
     "If the story reads like there are more than two sentences, it might be treated as having more than two sentences, regardless of punctuation. ",
-    "Entries will be accepted from November 2nd to November 8th. "
+    "Entries will be accepted from October 26th to November 8th. "
   ],
   wordLimit: 800,
   entryLimit: 3,
@@ -116,7 +116,7 @@ event["dearme"] = {
     "Avoid using parts of the letter that are offensive to any particular person and/or community.",
     "The letter can be humorous, dramatic, sad, sweet or anything else, but it must be to your past/future self.",
     "You are supposed to specify what age the letter addresses to, before you begin writing the letter. For eg: If you are writing to your 14 year old self, mention it. ",
-    "Entries will be accepted from October 19th to November 1st. "
+    "Entries will be accepted from October 19th to November 8th. "
   ],
   wordLimit: 1000,
   entryLimit: 3,
@@ -142,7 +142,7 @@ event["ragtag"] = {
     "Entries triggering hatred, violence or targeting a particular section are not tolerated. Such entries will be immediately removed.",
     "3 tags will be released and a maximum of 5 entries per person is permitted.",
     "The decision of the judging panel is final.",
-    "Entries will be accepted from November 2nd to November 8th. "
+    "Entries will be accepted from October 26th to November 8th. "
   ],
   wordLimit: 100,
   entryLimit: 5,
@@ -170,7 +170,7 @@ event["review"] = {
     "Format: Standard Review Format- Should consist of at least four paragraphs (Introduction, Summary, Analysis, Conclusion). ",
     "Try not to use harsh or offensive language. We know you might hate something a lot, but using too many of those four-letter words will make us and Pope Francis cry. Also, using derogatory terms targeting a person or group of people will certainly lead to disqualification. ",
     "You are free to write a review about absolutely anything, in any language. Your content will be judged for its eloquence, factual accuracy and preferably the humor. Try to make it as fun and as less boring as possible for the reader. A fun, concise and informative review is what we're looking for.",
-    "Entries will be accepted from October 19th to October 25th. "
+    "Entries will be accepted from October 19th to November 8th. "
   ],
   wordLimit: 800,
   entryLimit: 3,
@@ -201,7 +201,7 @@ event["plot"] = {
     "Genre: go wild. No preferred genre. Just make sure your story is as gripping as it can possibly be.",
     "Keep the reader captivated.",
     "Plagiarism: Haha, no. Any form of unoriginality will certainly lead to disqualification.",
-    "Entries will be accepted from October 19th to November 1st. "
+    "Entries will be accepted from October 19th to November 8th. "
   ],
   wordLimit: 1500,
   entryLimit: 3,
