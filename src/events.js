@@ -41,7 +41,7 @@ event["memeify"] = {
   imageLink:
     "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/memeify.jpg",
   description:
-    "Do you have what it takes to be the Meme-Lord of the Online Litfest Of Zozimus? If yes, come sharpen your mike wazowski's and get ready to speak the language of the gods. And then, the senate shall decide your fate.",
+    "Do you have what it takes to be the Meme-Lord of the Online Litfest Of Zozimus? If yes, come sharpen your Mike Wazowski's and get ready to speak the language of the gods. And then, the senate shall decide your fate.",
   rules: [
     "The rules can be found <a href='https://docs.google.com/document/u/1/d/e/2PACX-1vTRfmHcxnErgjySqs9mJ3TYsNinHKV7J0Ers3TuIxAmmY1tIkhBlsA0GiUJfwEyQ2lS7lJ-62nbbiYg/pub'>here</a>. "
   ],
