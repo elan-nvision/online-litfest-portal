@@ -6,7 +6,7 @@ event["sweetheart"] = {
   blockquoteAuthor: "",
   backgroundColor: "#F5EED1",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319727/sweetheartmain.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319727/sweetheartmain.jpg",
   description: `Ah, love: <br />
   The language which bonds the universe. <br />
   
@@ -39,7 +39,7 @@ event["memeify"] = {
   blockquoteAuthor: "",
   backgroundColor: "#B7DEDD",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319726/memeify.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/memeify.jpg",
   description:
     "Do you have what it takes to be the Meme-Lord of the Online Litfest Of Zozimus? If yes, come sharpen your Mike Wazowski's and get ready to speak the language of the gods. And then, the senate shall decide your fate.",
   rules: [
@@ -58,7 +58,7 @@ event["essay"] = {
   blockquoteAuthor: "",
   backgroundColor: "#ECE8CD",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319726/essayfinal.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/essayfinal.jpg",
   description:
     "Do you have any opinions on the most pressing matters of our age? Do you want to share your views and make sure your voice is heard? Look no further, for the essay competition of the Zozimus Online Litfest is just for you. There are two major topics this time: <ol><li>Youth and climate change: In what direction is our planet's health headed? What kind of a world do we want to live in tomorrow? As the youth of today, we have to speak up against the relentless destruction of our delicate environment. </li> <li>The past decade - golden age or garbage age? The last ten years has brought a lot to the world and has transformed our lives in more ways than one. Smartphones, social media as a way for world leaders to communicate and reach out to the public; the question is - is it all for the better or worse?</li></ol> ",
   rules: [
@@ -81,7 +81,7 @@ event["goosebumps"] = {
   blockquoteAuthor: "Joker",
   backgroundColor: "#F6DAD9",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319726/2linehorror.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/2linehorror.jpg",
   description: `You’ve probably already figured out what this is from the name. This Halloween time, give us your uncanniest stories in the most compact format. <br />
   Make sure you send chills down our spines to top our list of horror enthusiasts, because we, for one, don't scare easy.`,
   rules: [
@@ -107,7 +107,7 @@ event["dearme"] = {
   blockquoteAuthor: "",
   backgroundColor: "#8BBDA4",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571320416/dearme.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571320416/dearme.jpg",
   description:
     "From suggesting a good book to expressing regrets on a relationship, or from taking advice regarding a job to reminisce about that fun trip to Amsterdam, write a letter to your future/ past self about anything you feel like. Express your deepest dreams, doubts and desires with words of your choice, and, instead of locking it up in your books or folders, send it to us and see if you can win the prize!",
   rules: [
@@ -132,7 +132,7 @@ event["ragtag"] = {
   blockquoteAuthor: "",
   backgroundColor: "#8BCCE8",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571322230/ragtag.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571322230/ragtag.jpg",
   description:
     "Have a lot of amusing tales from your life that you'd like to share? Well, get ready, we're coming for you! Write to us your stories, experiences and anecdotes related to each tag and express your inner creative self with just a few words.",
   rules: [
@@ -158,7 +158,7 @@ event["review"] = {
   blockquoteAuthor: "",
   backgroundColor: "#61C4B0",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571320417/review.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571320417/review.jpg",
   description: `Do you have an appetite for criticizing “The Mess Food” or love talking to others about the features of your new smartphone? Well, you have come to the right place. We wish to hear your opinion. Stand up; express what you feel about absolutely anything at all. Tell us why it's amazing. Tell us why it sucks. We want to feel educated after reading your words on anything that exists (or not). <br /><br />
 
   From how they messed up the last season of your favorite show, to why you think that dude on M.G. Road sells the best Vada Paav ever. We'll take it all.
@@ -185,7 +185,7 @@ event["plot"] = {
   blockquoteAuthor: "",
   backgroundColor: "#D9EFDA",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319727/shortstory.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319727/shortstory.jpg",
   description: `So it’s gotta be short <br />
   It’s gotta be twisted <br />
   It’s gotta be at the end <br />
@@ -218,7 +218,7 @@ event["poetry"] = {
   blockquoteAuthor: "",
   backgroundColor: "#AFD1C1",
   imageLink:
-    "https://res.cloudinary.com/do3uy82tk/image/upload/q_auto:low/v1571319726/poetry.jpg",
+    "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/poetry.jpg",
   description:
     "All the world’s a stage and all of us, poets, with our beautiful phrases buried in the depths of our hearts. Well, excavate them and bring out the poet in you! ",
   rules: [
