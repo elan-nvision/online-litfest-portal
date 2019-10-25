@@ -98,7 +98,7 @@ event["goosebumps"] = {
   prize: [500, 250],
   sampleEntryLink:
     "https://docs.google.com/document/d/e/2PACX-1vS9xkVbsikrGijBUyv-D3bg-4EkZJGOsYsSMkFEjC9gQPxyz6q7BDARyse4-CrL7xXP_Izv17yTCsxC/pub",
-  isLive: "false"
+  isLive: "true"
 };
 event["dearme"] = {
   id: "dearme",
@@ -142,7 +142,7 @@ event["ragtag"] = {
     "Entries triggering hatred, violence or targeting a particular section are not tolerated. Such entries will be immediately removed.",
     "3 tags will be released and a maximum of 5 entries per person is permitted.",
     "The decision of the judging panel is final.",
-    "Entries will be accepted from October 26th to November 8th. "
+    "Entries will be accepted from November 2nd to November 8th. "
   ],
   wordLimit: 100,
   entryLimit: 5,
@@ -175,7 +175,8 @@ event["review"] = {
   wordLimit: 800,
   entryLimit: 3,
   prize: [1000, 500],
-  sampleEntryLink: ""
+  sampleEntryLink: "",
+  isLive: "true"
 };
 event["plot"] = {
   id: "plot",
@@ -232,7 +233,7 @@ event["poetry"] = {
   entryLimit: 3,
   prize: [1000, 500],
   sampleEntryLink: "",
-  isLive: "false"
+  isLive: "true"
 };
 
 export default event;

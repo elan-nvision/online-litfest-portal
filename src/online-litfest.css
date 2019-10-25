@@ -21,6 +21,12 @@ body {
   line-height: 1.7;
   color: #5f5b5b;
 }
+.modal-dialog {
+  text-align: center;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  max-width: 92vw;
+}
 
 #page {
   position: relative;

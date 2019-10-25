@@ -81,6 +81,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	db.SetMaxOpenConns(50000)
+	db.SetMaxIdleConns(0)
+	db.SetConnMaxLifetime(time.Nanosecond)
 	fmt.Println("Set up postgre db")
 	jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options{
 		ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
@@ -436,6 +439,7 @@ func main() {
 			email := claims["email"].(string)
 			rows, err := db.Query(`SELECT EXISTS(SELECT * FROM essay_entries WHERE email = $1)`, email)
 			if err != nil {
+
 				fmt.Println("Error in reading DB object", err)
 			}
 			var doesEntryExist bool
