@@ -220,7 +220,7 @@ event["poetry"] = {
   imageLink:
     "https://res.cloudinary.com/do3uy82tk/image/upload/v1571319726/poetry.jpg",
   description:
-    "All the world’s a stage and all of us, poets, with our beautiful phrases buried in the depths of our hearts. Well, excavate them and bring out the poet in you! ",
+    "All the world’s a stage and all of us, poets, with our beautiful phrases buried in the depths of our hearts. Well, excavate them and bring out the poet in you! There are four major topics for you to choose from: Nostalgia, Power, Beauty and Change. ",
   rules: [
     "You are expected to write poems within a week's time on the topics we roll out.",
     "The poems should not exceed 36 lines and should be within 400 words.",
