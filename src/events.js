@@ -224,12 +224,13 @@ event["poetry"] = {
   rules: [
     "You are expected to write poems within a week's time on the topics we roll out.",
     "Entries with racial/religious discrimination, offensive content won’t be tolerated and might lead to disqualification.",
+    "A maximum of 7 entries per person is allowed. ",
     "Plagiarism is strictly prohibited.",
     "The decision of the judging panel is final.",
     "Entries will be accepted from October 26th to November 8th. "
   ],
   wordLimit: 400,
-  entryLimit: 3,
+  entryLimit: 7,
   prize: [1000, 500],
   sampleEntryLink: "",
   isLive: "true"

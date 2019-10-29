@@ -490,9 +490,9 @@ class Memeify extends React.Component {
     };
     if (this.state.uploads == null) {
       return <Spin size="large" indicator={loading}></Spin>;
-    } else if (this.state.uploads > 3) {
-      return <p>You've already submitted 3 entries. </p>;
-    } else if (this.state.uploads <= 3) {
+    } else if (this.state.uploads > 10) {
+      return <p>You've already submitted 10 entries. </p>;
+    } else if (this.state.uploads <= 10) {
       return (
         <Dragger {...props}>
           <p className="ant-upload-drag-icon">
@@ -503,7 +503,7 @@ class Memeify extends React.Component {
           </p>
           <p className="ant-upload-hint">
             File size should be less than 2 MB. <br /> You can only upload a
-            total of 3 memes. <br /> Once uploaded, memes CANNOT be deleted.
+            total of 10 memes. <br /> Once uploaded, memes CANNOT be deleted.
           </p>
         </Dragger>
       );
