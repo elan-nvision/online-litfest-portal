@@ -149,7 +149,7 @@ event["ragtag"] = {
   prize: [750, 250],
   sampleEntryLink:
     "https://docs.google.com/document/d/e/2PACX-1vTe5YeMkxi5_7NZH6z_H-PMq0VD-ITHDUtvl_wbUQEoWD2F1OZmEaKcBC6Kasm8aHcaLq7rq9KtuiAH/pub",
-  isLive: "false"
+  isLive: "true"
 };
 event["review"] = {
   id: "review",
