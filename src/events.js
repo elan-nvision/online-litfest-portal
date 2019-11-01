@@ -148,7 +148,7 @@ event["ragtag"] = {
   entryLimit: 5,
   prize: [750, 250],
   sampleEntryLink:
-    "https://docs.google.com/document/d/e/2PACX-1vTe5YeMkxi5_7NZH6z_H-PMq0VD-ITHDUtvl_wbUQEoWD2F1OZmEaKcBC6Kasm8aHcaLq7rq9KtuiAH/pub",
+    "https://docs.google.com/document/d/e/2PACX-1vQHTXibky7IPHETyJd1Lh8fdRNhv8FUtQeuhR_oarYp1QB7ipT5m8OjCB1enoahw0JIxblnR8wSReO_/pub",
   isLive: "true"
 };
 event["review"] = {
