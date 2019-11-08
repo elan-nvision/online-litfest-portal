@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.8722438f.chunk.css",
-    "main.js": "/static/js/main.3c445ccc.chunk.js",
-    "main.js.map": "/static/js/main.3c445ccc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.69738acc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.69738acc.js.map",
-    "static/css/2.28ad21c4.chunk.css": "/static/css/2.28ad21c4.chunk.css",
-    "static/js/2.c3c6b913.chunk.js": "/static/js/2.c3c6b913.chunk.js",
-    "static/js/2.c3c6b913.chunk.js.map": "/static/js/2.c3c6b913.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.cf47303d1172a7bc45fab8edfa0be302.js": "/precache-manifest.cf47303d1172a7bc45fab8edfa0be302.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.28ad21c4.chunk.css.map": "/static/css/2.28ad21c4.chunk.css.map",
-    "static/css/main.8722438f.chunk.css.map": "/static/css/main.8722438f.chunk.css.map",
-    "static/media/zozimus.png": "/static/media/zozimus.588ac60c.png"
+    "main.css": "/portal/static/css/main.8722438f.chunk.css",
+    "main.js": "/portal/static/js/main.19abf3d3.chunk.js",
+    "main.js.map": "/portal/static/js/main.19abf3d3.chunk.js.map",
+    "runtime-main.js": "/portal/static/js/runtime-main.a58c82b1.js",
+    "runtime-main.js.map": "/portal/static/js/runtime-main.a58c82b1.js.map",
+    "static/css/2.28ad21c4.chunk.css": "/portal/static/css/2.28ad21c4.chunk.css",
+    "static/js/2.14a0c7b0.chunk.js": "/portal/static/js/2.14a0c7b0.chunk.js",
+    "static/js/2.14a0c7b0.chunk.js.map": "/portal/static/js/2.14a0c7b0.chunk.js.map",
+    "index.html": "/portal/index.html",
+    "precache-manifest.8d37720daf3df09426319dde45ea54e4.js": "/portal/precache-manifest.8d37720daf3df09426319dde45ea54e4.js",
+    "service-worker.js": "/portal/service-worker.js",
+    "static/css/2.28ad21c4.chunk.css.map": "/portal/static/css/2.28ad21c4.chunk.css.map",
+    "static/css/main.8722438f.chunk.css.map": "/portal/static/css/main.8722438f.chunk.css.map",
+    "static/media/zozimus.png": "/portal/static/media/zozimus.588ac60c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.69738acc.js",
+    "static/js/runtime-main.a58c82b1.js",
     "static/css/2.28ad21c4.chunk.css",
-    "static/js/2.c3c6b913.chunk.js",
+    "static/js/2.14a0c7b0.chunk.js",
     "static/css/main.8722438f.chunk.css",
-    "static/js/main.3c445ccc.chunk.js"
+    "static/js/main.19abf3d3.chunk.js"
   ]
 }
